@@ -1,0 +1,50 @@
+### CREATE TASK (POST)
+
+POST http://localhost:8081/task
+Content-Type: application/json
+
+{
+  "title": "Первая задача",
+  "description": "Проверка сервиса",
+  "status": "TODO",
+  "dueDate": "2026-02-10T12:00:00"
+}
+
+
+### CREATE TASK (POST)
+
+POST http://localhost:8081/task
+Content-Type: application/json
+
+{
+  "title": "Вторая задача",
+  "description": "Проверка сервиса",
+  "status": "TODO",
+  "dueDate": "2026-02-10T12:00:00"
+}
+
+
+### GET ALL TASKS
+
+GET http://localhost:8081/task
+
+
+### GET TASK BY ID
+
+
+GET http://localhost:8081/task/0af38fea-9e4e-49ae-8b83-4bccf8e5321f
+### UPDATE TASK (PUT)
+
+PUT http://localhost:8081/task/0af38fea-9e4e-49ae-8b83-4bccf8e5321f
+Content-Type: application/json
+
+{
+  "title": "Первая задача (обновлено)",
+  "description": "Обновление через PUT",
+  "status": "IN_PROGRESS",
+  "dueDate": "2026-02-11T12:00:00"
+}
+
+### DELETE TASK
+
+DELETE http://localhost:8081/task/0af38fea-9e4e-49ae-8b83-4bccf8e5321f
